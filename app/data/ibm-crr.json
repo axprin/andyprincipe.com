@@ -1,0 +1,46 @@
+{
+	"ibm-crr": {
+	  "title": "2014 IBM Corporate Responsibility Report",
+	  "img": "../images/crr.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "IBM's dedication to Corporate Responsibility is manifested in their annual Corporate Responsibility Report, a publicly available document that serves to educate people on both the legal and moral responsibility of IBM's mission. As a global leader in innovation, IBM releases this report as a website, with a downloadable PDF printout component. For the 2014 IBM Corporate Responsibility Report, as a part of VSA Partners, I lead the development effort for the creation of the website.",
+	  "body_text": "The 2014 IBM Corporate Responsibility Report is fully optimized for viewing on all screensizes. This report is a series of pages, subdivided by thematic category, and JavaScript driven interactions for navigation through the site. It was built with Grunt project scaffolding and reusable templates, that were fed by content through a series of json files. I worked closely with design, user experience  and the client to reach a consensus on the end product, after multiple iterations and different designs.",
+	  "link_address": "http://www.ibm.com/ibm/responsibility/2014/",
+	  "link_text": "2014 IBM Corporate Responsibility Report"
+	},
+	"your-ibm": {
+	  "title": "Your IBM",
+	  "img": "../images/your-ibm.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "The yourIBM project was a complete rework of IBM's corporate intranet as IBM leadership wanted a new feel and modern approach to their internal tools.",
+	  "body_text": "Built entirely using Backbone and an IBM proprietary framework known as the adaptive workplace framework (AWF), yourIBM serves as a completely responsive and adaptive tile/card system to present information to users in the most efficient way possible. There are three card states (mini, medium and expanded) to allow each user to customize their experience to the format that suits them best. All cards are configuration based, with permission and access defined by the users role. Cards vary in complexity and "
+	},
+	"bk-partners": {
+	  "title": "BK Partners",
+	  "img": "../images/bk-partners.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "Poopie poopie poopie",
+	  "body_text": "woooooopdie doo"
+	},
+	"np-complete": {
+	  "title": "np_complete1",
+	  "img": "../images/np-complete.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "Poopie poopie poopie",
+	  "body_text": "woooooopdie doo"
+	},
+	"igf": {
+	  "title": "IBM International Global Financing",
+	  "img": "../images/igf.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "Poopie poopie poopie",
+	  "body_text": "woooooopdie doo"
+	},
+	"forte": {
+	  "title": "Forte: Music Visualized",
+	  "img": "../images/forte.png",
+	  "img_alt": "The eighth post image",
+	  "intro_text": "Poopie poopie poopie",
+	  "body_text": "woooooopdie doo"
+	}
+}

@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-styles/typography.html">
+
+<dom-module name="work-service" attributes="work">
+  <template>
+    <style>
+    :host {
+      display: none;
+    }
+    </style>
+    <iron-ajax auto 
+      url="../../data/ibm-crr.json"
+      handle-as="json"
+      last-response="{{works}}"></iron-ajax>
+  </template>
+  <script>
+    Polymer({
+      is: 'work-service',
+      properties: {
+        works: {
+          type: Object,
+          notify: true,
+          value: function(){return {}}
+        }
+      }
+    });
+  </script>
+</dom-module>

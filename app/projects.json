@@ -1,0 +1,12 @@
+{
+  "name": "project data",
+  "projects": [{
+        "key": "ibm-crr",
+        "title": "",
+        "content": "test test test test test"
+      }, {
+        "key": "post-2",
+        "title": "some other post",
+        "content": "test test test test test"
+      }]
+}

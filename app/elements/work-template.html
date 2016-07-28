@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
+
+<dom-module id="work-template" attributes="work">
+  <template>
+  <style>
+    img.work-img {
+      width: 100%;
+    }
+  </style>
+    <a href="/projects">Back to projects</a>
+    <h2>{{work.title}}</h2>
+    <p>{{work.intro_text}}</p>
+    <p>{{work.body_text}}</p>
+    <img class="work-img" src="{{work.img}}" alt="{{work.img_alt}}">
+  </template>
+  <script>
+    Polymer({
+      is: "work-template",
+      properties: {
+        work: Object,
+        notify: true
+      }
+    });
+  </script>
+</dom-module>
