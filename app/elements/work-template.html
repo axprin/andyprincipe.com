@@ -8,11 +8,33 @@
       width: 100%;
     }
   </style>
-    <a href="/projects">Back to projects</a>
+    <!-- <a href="/projects">Back to projects</a> -->
+    
     <h2>{{work.title}}</h2>
+    
+    <template is="dom-if" if="{{work.link_address}}">
+      <a href={{work.link_address}} target="_BLANK">{{work.link_text}}</a>
+    </template>
+
+    <template is="dom-if" if="{{work.link_address_2}}">
+      <a href={{work.link_address_2}} target="_BLANK">{{work.link_text_2}}</a>
+    </template>
+    
     <p>{{work.intro_text}}</p>
-    <p>{{work.body_text}}</p>
-    <img class="work-img" src="{{work.img}}" alt="{{work.img_alt}}">
+    
+    <template is="dom-if" if="{{work.img}}">
+      <img class="work-img" src="{{work.img}}" alt="{{work.img_alt}}">
+    </template>
+
+    <template is="dom-if" if="{{work.body_text}}">
+      <p>{{work.body_text}}</p>
+    </template>
+
+    <template is="dom-if" if="{{work.img_2}}">
+      <img class="work-img" src="{{work.img_2}}" alt="{{work.img_alt_2}}">
+    </template>
+    
+    <a href="/projects">Back to projects</a>
   </template>
   <script>
     Polymer({

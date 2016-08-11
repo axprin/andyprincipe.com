@@ -54,10 +54,9 @@
     //   setFocus(app.route);
     // });
 
-    page('/about', function() {
-      app.route = 'about';
-      // setFocus(app.route);
-    });
+    // page('/about', function() {
+      // app.route = 'about';
+    // });
 
 
     page('/projects', function() {
@@ -81,12 +80,24 @@
       app.route = 'np-complete';
     });
 
-    page('/projects/igf', function() {
-      app.route = 'igf';
+    page('/projects/ibm-igf', function() {
+      app.route = 'ibm-igf';
     });
 
     page('/projects/forte', function() {
       app.route = 'forte';
+    });
+
+    page('/projects/kinect-swipe', function() {
+      app.route = 'kinect-swipe';
+    });
+
+    page('/projects/thermin', function() {
+      app.route = 'thermin';
+    });
+
+    page('/projects/arduino-sousvide', function() {
+      app.route = 'arduino-sousvide';
     });
     // page('/projects/:name', function(data) {
     //   app.route = 'project-info';

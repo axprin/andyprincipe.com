@@ -47,6 +47,8 @@
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
+
+  <script src="scripts/thermin.js"></script>
 </head>
 
 <body unresolved>
@@ -72,10 +74,10 @@
             <span>Home</span>
           </a>
 
-          <a data-route="about" href="{{baseUrl}}about">
-            <iron-icon icon="account-circle"></iron-icon>
-            <span>About</span>
-          </a>
+          <!-- <a data-route="about" href="{{baseUrl}}about"> -->
+            <!-- <iron-icon icon="account-circle"></iron-icon> -->
+            <!-- <span>About</span> -->
+          <!-- </a> -->
 
           <a data-route="projects" href="{{baseUrl}}projects">
             <iron-icon icon="build"></iron-icon>
@@ -119,28 +121,45 @@
             <section data-route="home">
               <!-- <paper-material elevation="1"> -->
                 <h1 class="page-title focus-target" tabindex="-1">Welcome</h1>
-                <p>blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. </p>
-                <p>blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. blah. </p>
+                <p>Hello, world... and welcome to andyprincipe.com! This is the homebase and personal website for me, Andy Principe, a design-minded web developer and musician, currently residing in New York City. I work at VSA Partners, a digital design and branding agency, where I focus mostly on front-end work with IBM clients but I try to also keep busy with freelance and personal projects. Although my roots are mainly in JavaScript and Ruby, I'm always trying to learn new things and grow!</p>
+                <p>Instead of writing a big bio about myself, it might just be easier to introduce myself with this list:</p>
+                <ul>
+                  <li>Seinfeld enthusiast</li>
+                  <li>Hockey fan</li>
+                  <li>Musician (show goer, listener of and somewhat retired performer)</li>
+                  <li>Cheap eats and streetfood connoisseur</li>
+                  <li>Kombucha farmer</li>
+                  <li>Appreciator of beers and whiskeys</li>
+                  <li>New Yorker (Ex Chicagoan and DCer)</li>
+                  <li>Native Richmond, Virginian</li>
+                </ul>
+                
               <!-- </paper-material> -->
             </section>
 
-            <section data-route="about">
+            <!-- <section data-route="about"> -->
               <!-- <paper-material elevation="1"> -->
-                <h1 class="page-title focus-target" tabindex="-1">About</h1>
-                <div>THIS IS ABOUT ME</div>
+                <!-- <h1 class="page-title focus-target" tabindex="-1">About</h1> -->
               <!-- </paper-material> -->
-            </section>
+            <!-- </section> -->
 
             <section data-route="projects">
               <!-- <paper-material elevation="1"> -->
-                <h1 class="page-title focus-target" tabindex="-1">Projects</h1>
+                <h1 class="page-title focus-target" tabindex="-1">Professional Projects</h1>
                 <div class="flexbox-container">
                   <a class="flexbox-item" href$="{{baseUrl}}projects/ibm-crr"><img class="project-thumbnail" src="images/ibm-crr.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/your-ibm"><img class="project-thumbnail" src="images/your-ibm-icon.png"></a>
+                  <a class="flexbox-item" href$="{{baseUrl}}projects/kinect-swipe"><img class="project-thumbnail" src="images/kinect-swipe-icon.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/bk-partners"><img class="project-thumbnail" src="images/bk-partners-icon.png"></a>
-                  <a class="flexbox-item" href$="{{baseUrl}}projects/igf"><img class="project-thumbnail" src="images/igf-icon.png"></a>
-                  <a class="flexbox-item" href$="{{baseUrl}}projects/forte"><img class="project-thumbnail" src="images/forte-icon.png"></a>
+                  <a class="flexbox-item" href$="{{baseUrl}}projects/ibm-igf"><img class="project-thumbnail" src="images/igf-icon.png"></a>
+                </div>
+
+                <h1 class="page-title focus-target" tabindex="-1">Personal Projects</h1>
+                <div class="flexbox-container">
+                  <a class="flexbox-item" href$="{{baseUrl}}projects/thermin"><img class="project-thumbnail" src="images/thermin-icon.png"></a>
+                  <a class="flexbox-item" href$="{{baseUrl}}projects/arduino-sousvide"><img class="project-thumbnail" src="images/arduino-sousvide-icon.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/np-complete"><img class="project-thumbnail" src="images/np-complete-icon.png"></a>
+                  <a class="flexbox-item" href$="{{baseUrl}}projects/forte"><img class="project-thumbnail" src="images/forte-icon.png"></a>
                 </div>
               <!-- </paper-material> -->
             </section>
@@ -161,6 +180,13 @@
               <!-- </paper-material> -->
             </section>
 
+            <section data-route="kinect-swipe">
+              <!-- <paper-material elevation="1"> -->
+                <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
+                <work-template work="{{works.kinect-swipe}}"></work-template>
+              <!-- </paper-material> -->
+            </section>
+
             <section data-route="np-complete">
               <!-- <paper-material elevation="1"> -->
                 <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
@@ -175,10 +201,10 @@
               <!-- </paper-material> -->
             </section>
 
-            <section data-route="igf">
+            <section data-route="ibm-igf">
               <!-- <paper-material elevation="1"> -->
                 <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
-                <work-template work="{{works.igf}}"></work-template>
+                <work-template work="{{works.ibm-igf}}"></work-template>
               <!-- </paper-material> -->
             </section>
 
@@ -186,6 +212,25 @@
               <!-- <paper-material elevation="1"> -->
                 <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
                 <work-template work="{{works.forte}}"></work-template>
+              <!-- </paper-material> -->
+            </section>
+
+            <section data-route="arduino-sousvide">
+              <!-- <paper-material elevation="1"> -->
+                <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
+                <work-template work="{{works.arduino-sousvide}}"></work-template>
+              <!-- </paper-material> -->
+            </section>
+
+            <section data-route="thermin">
+              <!-- <paper-material elevation="1"> -->
+                <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
+                <!-- <div>this is a testtttt!</div> -->
+                <!-- <div id="thermin-demo" width="300" height="300" style="border: 1px solid black;"></div> -->
+                <!-- <script>
+                  Thermin({'id': 'thermin-demo'});
+                </script> -->
+                <work-template work="{{works.thermin}}"></work-template>
               <!-- </paper-material> -->
             </section>
 
