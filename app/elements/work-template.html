@@ -6,18 +6,30 @@
   <style>
     img.work-img {
       width: 100%;
+      margin: 15px 0;
+    }
+    a.external-link {
+      padding: 15px 0px;
+    }
+    a.back-link {
+      display: block;
+      padding-top: 30px;
+    }
+    .copyright {
+      width: 230px;
+      margin: 100px auto 0px;
     }
   </style>
     <!-- <a href="/projects">Back to projects</a> -->
     
     <h2>{{work.title}}</h2>
-    
+
     <template is="dom-if" if="{{work.link_address}}">
-      <a href={{work.link_address}} target="_BLANK">{{work.link_text}}</a>
+      <a class="external-link" href={{work.link_address}} target="_BLANK">{{work.link_text}}</a>
     </template>
 
     <template is="dom-if" if="{{work.link_address_2}}">
-      <a href={{work.link_address_2}} target="_BLANK">{{work.link_text_2}}</a>
+      <a class="external-link" href={{work.link_address_2}} target="_BLANK">{{work.link_text_2}}</a>
     </template>
     
     <p>{{work.intro_text}}</p>
@@ -34,7 +46,9 @@
       <img class="work-img" src="{{work.img_2}}" alt="{{work.img_alt_2}}">
     </template>
     
-    <a href="/projects">Back to projects</a>
+    <a class="back-link" href="/projects">Back to projects</a>
+
+    <div class='copyright'>Copyright © Andy Principe 2016</div>
   </template>
   <script>
     Polymer({

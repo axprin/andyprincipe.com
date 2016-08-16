@@ -6,7 +6,7 @@
 	  "intro_text": "IBM's dedication to Corporate Responsibility is manifested in their annual Corporate Responsibility Report, a publicly available document that serves to educate people on both the legal and moral responsibility of IBM's mission. As a global leader in innovation, IBM releases this report as a website, with a downloadable PDF printout component. For the 2014 IBM Corporate Responsibility Report, as a part of VSA Partners, I lead the development effort for the creation of the website.",
 	  "body_text": "The 2014 IBM Corporate Responsibility Report is fully optimized for viewing on all screensizes. This report is a series of pages, subdivided by thematic category, and JavaScript driven interactions for navigation through the site. It was built with Grunt project scaffolding and reusable templates, that were fed by content through a series of json files. I worked closely with design, user experience  and the client to reach a consensus on the end product, after multiple iterations and different designs.",
 	  "link_address": "http://www.ibm.com/ibm/responsibility/2014/",
-	  "link_text": "2014 IBM Corporate Responsibility Report"
+	  "link_text": "Website"
 	},
 	"your-ibm": {
 	  "title": "Your IBM",
@@ -22,7 +22,7 @@
 	  "img_2": "../images/kinect-swipe2.png",
 	  "img_alt_2": "kinect swipe",
 	  "intro_text": "A Processing library that reads visual data from a Microsoft Kinect and easily detects presence and swipe motions in a fully customizable 3-D hitzone.",
-	  "body_text": "A pet project, at VSA Partners, that turned into an interesting human user interface API. This visual depiction just shows the camera's input, but is able to broadcast right and left swipe motions events as well as object presence, all through a simple websocket. I was able to hook this into a node.js application which allowed users to scroll through content on a television with physical swipes."
+	  "body_text": "A pet project, at VSA Partners, that turned into an interesting human user interface API. This visual depiction just shows the camera's input, but is able to broadcast right and left swipe motions events as well as object presence through a simple websocket. I was able to hook this into a node.js application which allowed users to scroll through content on a television with physical swipes."
 	},
 	"np-complete": {
 	  "title": "np_complete1",
@@ -49,8 +49,7 @@
 	  "title": "IBM International Global Financing",
 	  "img": "../images/igf.png",
 	  "img_alt": "IBM IGF",
-	  "intro_text": "Poopie poopie poopie",
-	  "body_text": "woooooopdie doo",
+	  "intro_text": "Website redesign for IBM's Global Financing division, utilizing IBM's own v18 design system. For this project, I had to interface with designers as well as IBM developers for contribution the v18 design system.",
 	  "link_address": "https://www.ibm.com/financing/us-en",
 	  "link_text": "Website"
 	},
@@ -58,7 +57,7 @@
 	  "title": "Forte: Music Visualized",
 	  "img": "../images/forte.png",
 	  "img_alt": "Forte",
-	  "intro_text": "Forte is my final project while at Dev Bootcamp, where I worked with three other students for 8 days to build a fully functional web application from scratch. Our application provides musicians with the ability to upload, view and play back their music through a user friendly interface. What sets Forte apart is the ability to quantify music as hard data that gets run through complex analysis to provide the user with metrics on their work. Forte is a Ruby on Rails application, with heavy emphasis on JavaScript (specifically C3) for data visualizations.",
+	  "intro_text": "Forte is my final project while at Dev Bootcamp, where I worked with three other students for 8 days to build a fully functional web application from scratch. Our application provides musicians with the ability to upload, view and play back their music through a user friendly interface. What sets Forte apart is the ability to quantify music as hard data that gets run through complex analysis to provide the user with metrics on their work. Forte is a Ruby on Rails application, with heavy emphasis on JavaScript (specifically d4/c3) for data visualizations.",
 	  "link_address": "https://github.com/axprin/pitches_and_rows",
 	  "link_text": "Source Code"
 	},
