@@ -9,11 +9,11 @@
 	  "link_text": "Website"
 	},
 	"your-ibm": {
-	  "title": "Your IBM",
+	  "title": "yourIBM",
 	  "img": "../images/your-ibm.png",
 	  "img_alt": "yourIBM",
 	  "intro_text": "The yourIBM project was a complete rework of IBM's corporate intranet as IBM leadership wanted a new feel and modern approach to their internal tools.",
-	  "body_text": "Built entirely using Backbone and an IBM proprietary framework known as the Adaptive Workplace Foundation (AWF), yourIBM serves as a completely responsive and adaptive tile/card system to present information to users in the most efficient way possible. There are three card states (mini, medium and expanded) to allow each user to customize their experience to the format that suits them best. All cards are configuration based, with permission and access defined by the users role. Cards vary in complexity and "
+	  "body_text": "Built entirely using Backbone and an IBM proprietary framework known as the Adaptive Workplace Foundation (AWF), yourIBM serves as a completely responsive and adaptive tile/card system to present information to users in the most efficient way possible. There are three card states (mini, medium and expanded) to allow each user to customize their experience to the format that suits them best. All cards are configuration based, with permission and access defined by the user's role."
 	},
 	"kinect-swipe": {
 	  "title": "Kinect Swipe",

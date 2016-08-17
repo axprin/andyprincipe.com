@@ -244,12 +244,13 @@
             <section data-route="contact">
               <!-- <paper-material elevation="1"> -->
                 <h1 class="page-title focus-target" tabindex="-1">Contact</h1>
+                <h2>Send me a note:</h2>
                 <div class="contact-form">
                   <form action="https://getsimpleform.com/messages?form_api_token=c3b4423017518149bd0f8070b15a4de6" method="post">
                     <paper-input id="contact-name" label="Name" required error-message="Please enter your name!" name="name"></paper-input>
                     <gold-email-input id="contact-email" label="Email Address" name="email" required error-message="Please enter a valid email address!"></gold-email-input>
                     <paper-textarea id="contact-message" label="Message" required error-message="Please enter a message!" name="message"></paper-textarea>
-                    <paper-button id="contact-submit-button" raised type='submit' onclick="submitForm()">Submit!</paper-button>
+                    <paper-button id="contact-submit-button" raised type='submit' onclick="submitForm()">Send!</paper-button>
                   </form>
                   <p id="form-success-message" style="display: none">You have submitted!</p>
                 </div>
