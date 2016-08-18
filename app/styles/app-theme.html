@@ -139,8 +139,14 @@
 
   .flexbox-container {
     display: flex;
-    flex-flow: row; 
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex; 
+    /*flex-flow: row; */
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     justify-content: space-between;
     /*border: 1px solid rgba(0, 0, 0, 0.14);*/
   }
@@ -160,7 +166,7 @@
   }
 
   .content {
-    height: 900px;
+    /*height: 900px;*/
     background-color: white;
   }
 

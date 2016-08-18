@@ -69,5 +69,15 @@
     app.$.paperDrawerPanel.closeDrawer();
   };
 
+  app.submitForm = function(e) {
+    var name = document.getElementById('contact-name').validate();
+    var email = document.getElementById('contact-email').validate();
+    var message = document.getElementById('contact-message').validate();
+
+    if (name && email && message) {
+      Polymer.dom(e).node.activeElement.parentElement.submit();
+      document.getElementById('form-success-message').style.display = 'inline-block';
+    }
+  }
 
 })(document);

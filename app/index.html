@@ -9,7 +9,8 @@
   <title>Andy Principe</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
-
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+  
   <!-- Chrome for Android theme color -->
   <!-- <meta name="theme-color" content="#2E3AA1"> -->
 
@@ -248,7 +249,7 @@
                     <paper-input id="contact-name" label="Name" required error-message="Please enter your name!" name="name"></paper-input>
                     <gold-email-input id="contact-email" label="Email Address" name="email" required error-message="Please enter a valid email address!"></gold-email-input>
                     <paper-textarea id="contact-message" label="Message" required error-message="Please enter a message!" name="message"></paper-textarea>
-                    <paper-button id="contact-submit-button" raised type='submit' onclick="submitForm()">Send!</paper-button>
+                    <paper-button id="contact-submit-button" raised type='submit' onclick="app.submitForm()">Send!</paper-button>
                   </form>
                   <p id="form-success-message" style="display: none">You have submitted!</p>
                 </div>
@@ -305,18 +306,6 @@
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
 
-  <script>
-    function submitForm(e) {
-      var name = document.getElementById('contact-name').validate();
-      var email = document.getElementById('contact-email').validate();
-      var message = document.getElementById('contact-message').validate();
-
-      if (name && email && message) {
-        Polymer.dom(e).node.activeElement.parentElement.submit();
-        document.getElementById('form-success-message').style.display = 'inline-block';
-      }
-    }
-  </script>
   <!-- endbuild-->
 </body>
 
