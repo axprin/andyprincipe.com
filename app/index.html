@@ -9,7 +9,8 @@
   <title>Andy Principe</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
-
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+  
   <!-- Chrome for Android theme color -->
   <!-- <meta name="theme-color" content="#2E3AA1"> -->
 
@@ -47,8 +48,6 @@
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
-
-  <script src="scripts/thermin.js"></script>
 </head>
 
 <body unresolved>
@@ -120,8 +119,8 @@
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
             <section data-route="home">
               <!-- <paper-material elevation="1"> -->
-                <h1 class="page-title focus-target" tabindex="-1">Welcome</h1>
-                <p>Hello, world... and welcome to andyprincipe.com! This is the homebase and personal website for me, Andy Principe, a design-minded web developer and musician, currently residing in New York City. I work at VSA Partners, a digital design and branding agency, where I focus mostly on front-end work with IBM clients but I try to also keep busy with freelance and personal projects. Although my roots are mainly in JavaScript and Ruby, I'm always trying to learn new things and grow!</p>
+                <h1 class="page-title focus-target" tabindex="-1">Hello, world!</h1>
+                <p>...and welcome to andyprincipe.com! This is the homebase and personal website for me, Andy Principe, a design-minded web developer and musician, currently residing in New York City. I work at VSA Partners, a digital design and branding agency, where I focus mostly on front-end work with IBM clients but I try to also keep busy with freelance and personal projects. Although my roots are mainly in JavaScript and Ruby, I'm always trying to learn new things and grow!</p>
                 <p>Instead of writing a big bio about myself, it might just be easier to introduce myself with this list:</p>
                 <ul>
                   <li>Seinfeld enthusiast</li>
@@ -137,6 +136,8 @@
                 <div class='home-pic-background'>
                   <img src="images/axprin.png" alt="andy!">
                 </div>
+
+                <div class='copyright'>Copyright © Andy Principe 2016</div>
                 
               <!-- </paper-material> -->
             </section>
@@ -149,7 +150,7 @@
 
             <section data-route="projects">
               <!-- <paper-material elevation="1"> -->
-                <h1 class="page-title focus-target" tabindex="-1">Professional Projects</h1>
+                <h1 class="page-title focus-target" tabindex="-1">Projects for others</h1>
                 <div class="flexbox-container">
                   <a class="flexbox-item" href$="{{baseUrl}}projects/ibm-crr"><img class="project-thumbnail" src="images/ibm-crr.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/your-ibm"><img class="project-thumbnail" src="images/your-ibm-icon.png"></a>
@@ -158,13 +159,14 @@
                   <a class="flexbox-item" href$="{{baseUrl}}projects/ibm-igf"><img class="project-thumbnail" src="images/igf-icon.png"></a>
                 </div>
 
-                <h1 class="page-title focus-target" tabindex="-1">Personal Projects</h1>
+                <h1 class="page-title focus-target" tabindex="-1">Projects for me</h1>
                 <div class="flexbox-container">
                   <a class="flexbox-item" href$="{{baseUrl}}projects/thermin"><img class="project-thumbnail" src="images/thermin-icon.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/arduino-sousvide"><img class="project-thumbnail" src="images/arduino-sousvide-icon.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/np-complete"><img class="project-thumbnail" src="images/np-complete-icon.png"></a>
                   <a class="flexbox-item" href$="{{baseUrl}}projects/forte"><img class="project-thumbnail" src="images/forte-icon.png"></a>
                 </div>
+                <div class='copyright'>Copyright © Andy Principe 2016</div>
               <!-- </paper-material> -->
             </section>
 
@@ -230,7 +232,7 @@
               <!-- <paper-material elevation="1"> -->
                 <!-- <h1 class="page-title focus-target" tabindex="-1">yourIBM</h1> -->
                 <!-- <div>this is a testtttt!</div> -->
-                <!-- <div id="thermin-demo" width="300" height="300" style="border: 1px solid black;"></div> -->
+                <!-- <div id="therminthermin-demo" width="300" height="300" style="border: 1px solid black;"></div> -->
                 <!-- <script>
                   Thermin({'id': 'thermin-demo'});
                 </script> -->
@@ -241,12 +243,13 @@
             <section data-route="contact">
               <!-- <paper-material elevation="1"> -->
                 <h1 class="page-title focus-target" tabindex="-1">Contact</h1>
+                <h2>Send me a note:</h2>
                 <div class="contact-form">
                   <form action="https://getsimpleform.com/messages?form_api_token=c3b4423017518149bd0f8070b15a4de6" method="post">
                     <paper-input id="contact-name" label="Name" required error-message="Please enter your name!" name="name"></paper-input>
                     <gold-email-input id="contact-email" label="Email Address" name="email" required error-message="Please enter a valid email address!"></gold-email-input>
                     <paper-textarea id="contact-message" label="Message" required error-message="Please enter a message!" name="message"></paper-textarea>
-                    <paper-button id="contact-submit-button" raised type='submit' onclick="submitForm()">Submit!</paper-button>
+                    <paper-button id="contact-submit-button" raised type='submit' onclick="app.submitForm()">Send!</paper-button>
                   </form>
                   <p id="form-success-message" style="display: none">You have submitted!</p>
                 </div>
@@ -268,6 +271,7 @@
                     <paper-icon-button class="social-icon" src="images/social/gmail.png" alt="gmail" title="gmail"></paper-icon-button>
                   </a>
                 </div>
+                <div class='copyright'>Copyright © Andy Principe 2016</div>
               <!-- </paper-material> -->
             </section>
           </iron-pages>
@@ -302,18 +306,6 @@
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
 
-  <script>
-    function submitForm(e) {
-      var name = document.getElementById('contact-name').validate();
-      var email = document.getElementById('contact-email').validate();
-      var message = document.getElementById('contact-message').validate();
-
-      if (name && email && message) {
-        Polymer.dom(e).node.activeElement.parentElement.submit();
-        document.getElementById('form-success-message').style.display = 'inline-block';
-      }
-    }
-  </script>
   <!-- endbuild-->
 </body>
 

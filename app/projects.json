@@ -1,12 +1,81 @@
 {
-  "name": "project data",
-  "projects": [{
-        "key": "ibm-crr",
-        "title": "",
-        "content": "test test test test test"
-      }, {
-        "key": "post-2",
-        "title": "some other post",
-        "content": "test test test test test"
-      }]
+	"ibm-crr": {
+	  "title": "2014 IBM Corporate Responsibility Report",
+	  "img": "../images/crr.png",
+	  "img_alt": "IBM Corporate Responsibility Report",
+	  "intro_text": "IBM's dedication to Corporate Responsibility is manifested in their annual Corporate Responsibility Report, a publicly available document that serves to educate people on both the legal and moral responsibility of IBM's mission. As a global leader in innovation, IBM releases this report as a website, with a downloadable PDF printout component. For the 2014 IBM Corporate Responsibility Report, as a part of VSA Partners, I lead the development effort for the creation of the website.",
+	  "body_text": "The 2014 IBM Corporate Responsibility Report is fully optimized for viewing on all screensizes. This report is a series of pages, subdivided by thematic category, and JavaScript driven interactions for navigation through the site. It was built with Grunt project scaffolding and reusable templates, that were fed by content through a series of json files. I worked closely with design, user experience  and the client to reach a consensus on the end product, after multiple iterations and different designs.",
+	  "link_address": "http://www.ibm.com/ibm/responsibility/2014/",
+	  "link_text": "Website"
+	},
+	"your-ibm": {
+	  "title": "yourIBM",
+	  "img": "../images/your-ibm.png",
+	  "img_alt": "yourIBM",
+	  "intro_text": "The yourIBM project was a complete rework of IBM's corporate intranet as IBM leadership wanted a new feel and modern approach to their internal tools.",
+	  "body_text": "Built entirely using Backbone and an IBM proprietary framework known as the Adaptive Workplace Foundation (AWF), yourIBM serves as a completely responsive and adaptive tile/card system to present information to users in the most efficient way possible. There are three card states (mini, medium and expanded) to allow each user to customize their experience to the format that suits them best. All cards are configuration based, with permission and access defined by the user's role."
+	},
+	"kinect-swipe": {
+	  "title": "Kinect Swipe",
+	  "img": "../images/kinect-swipe1.png",
+	  "img_alt": "kinect swipe",
+	  "img_2": "../images/kinect-swipe2.png",
+	  "img_alt_2": "kinect swipe",
+	  "intro_text": "A Processing library that reads visual data from a Microsoft Kinect and easily detects presence and swipe motions in a fully customizable 3-D hitzone.",
+	  "body_text": "A pet project, at VSA Partners, that turned into an interesting human user interface API. This visual depiction just shows the camera's input, but is able to broadcast right and left swipe motions events as well as object presence through a simple websocket. I was able to hook this into a node.js application which allowed users to scroll through content on a television with physical swipes."
+	},
+	"np-complete": {
+	  "title": "np_complete1",
+	  "img": "../images/np-complete-comit.png",
+	  "img_alt": "XKCD np complete",
+	  "img_2": "../images/np-complete.png",
+	  "img_alt_2": "XKCD np complete",
+	  "intro_text": "Simple web app that solves this XKCD cartoon.",
+	  "body_text": "After reading this cartoon, I was immediately intrigued and wanted to figure this out. I was able to write an algorithm to solve this and figured I might as well build it into a web application. You upload a simple text (.txt) file with various items, prices and a bill total. It will output all combinations of menu items that sum to the total provided. Built entirely in Ruby on a Sinatra framework.",
+	  "link_address": "https://np-complete1.herokuapp.com/",
+	  "link_text": "Demo",
+	  "link_address_2": "https://github.com/axprin/np_complete",
+	  "link_text_2": "Source Code"
+	},
+	"bk-partners": {
+	  "title": "BK Partners",
+	  "img": "../images/bk-partners.png",
+	  "img_alt": "BK Partners homepage",
+	  "intro_text": "Freelance project to build a website for a financial research firm located in New York City. In addition to the website, I also serve as the webmaster for BK Partners LLC, responsible for all website maintainence and updates.",
+	  "link_address": "http://bkresearch.com",
+	  "link_text": "Website"
+	},
+	"ibm-igf": {
+	  "title": "IBM International Global Financing",
+	  "img": "../images/igf.png",
+	  "img_alt": "IBM IGF",
+	  "intro_text": "Website redesign for IBM's Global Financing division, utilizing IBM's own v18 design system. For this project, I had to interface with designers as well as IBM developers for contribution the v18 design system.",
+	  "link_address": "https://www.ibm.com/financing/us-en",
+	  "link_text": "Website"
+	},
+	"forte": {
+	  "title": "Forte: Music Visualized",
+	  "img": "../images/forte.png",
+	  "img_alt": "Forte",
+	  "intro_text": "Forte is my final project while at Dev Bootcamp, where I worked with three other students for 8 days to build a fully functional web application from scratch. Our application provides musicians with the ability to upload, view and play back their music through a user friendly interface. What sets Forte apart is the ability to quantify music as hard data that gets run through complex analysis to provide the user with metrics on their work. Forte is a Ruby on Rails application, with heavy emphasis on JavaScript (specifically d4/c3) for data visualizations.",
+	  "link_address": "https://github.com/axprin/pitches_and_rows",
+	  "link_text": "Source Code"
+	},
+	"arduino-sousvide": {
+	  "title": "Arduino sous-vide",
+	  "img": "../images/arduino-sousvide1.png",
+	  "img_alt": "Arduino Sousvide",
+	  "img_2": "../images/arduino-sousvide2.png",
+	  "img_alt_2": "Arduino Sousvide",
+	  "intro_text": "Background: Sous-vide is the french practice of cooking by which food is sealed in airtight plastic bags then placed in a temperature-controlled water environment for longer than normal cooking times at an accurately regulated temperature much lower than normally used for cooking. The intent is to cook the item evenly, ensuring that the inside is properly cooked without overcooking the outside, and retain moisture.",
+	  "body_text": "Homemade Arduino-powered sous-vide cooker"
+	},
+	"thermin": {
+	  "title": "thermin",
+	  "intro_text": "Originally started as a way play with the Web Audio API, I got the idea to abstract it into a jQuery plugin first, then ultimately a vanilla JavaScript library for easy implementation anywhere. Allows for basic customization (oscillator wave type, frequency minimum and frequency maximum) and comes out of the box ready to easily implement and play with.",
+	"link_address": "https://cdn.rawgit.com/axprin/thermin.js/master/index.html",
+	"link_text": "Demo",
+	"link_address_2": "https://github.com/axprin/thermin.js",
+	"link_text_2": "Source Code"
+	}
 }

@@ -47,6 +47,7 @@
     /*border-bottom: var(--drawer-toolbar-border-color);*/
   }
 
+
   #drawerToolbar .menu-name {
     @apply(--paper-font-title);
   }
@@ -56,6 +57,11 @@
     background-color: #41e570;
     padding: 15px 15px 8px;
     border-radius: 100px;
+  }
+
+  .copyright {
+    width: 230px;
+    margin: 100px auto 0px;
   }
 
   paper-scroll-header-panel {
@@ -133,8 +139,14 @@
 
   .flexbox-container {
     display: flex;
-    flex-flow: row; 
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex; 
+    /*flex-flow: row; */
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     justify-content: space-between;
     /*border: 1px solid rgba(0, 0, 0, 0.14);*/
   }
@@ -149,8 +161,12 @@
     width: 320px; 
   }
 
+  .work-img {
+    margin: 20px 0;
+  }
+
   .content {
-    height: 900px;
+    /*height: 900px;*/
     background-color: white;
   }
 
