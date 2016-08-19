@@ -22,7 +22,7 @@
 	  "img_2": "../images/kinect-swipe2.png",
 	  "img_alt_2": "kinect swipe",
 	  "intro_text": "A Processing library that reads visual data from a Microsoft Kinect and easily detects presence and swipe motions in a fully customizable 3-D hitzone.",
-	  "body_text": "A pet project, at VSA Partners, that turned into an interesting human user interface API. This visual depiction just shows the camera's input, but is able to broadcast right and left swipe motions events as well as object presence through a simple websocket. I was able to hook this into a node.js application which allowed users to scroll through content on a television with physical swipes."
+	  "body_text": "A pet project, at VSA Partners, that turned into an interesting human user interface API. This visual depiction just shows the camera's input, but is able to broadcast right and left swipe motion events as well as object presence through a simple websocket. I was able to hook this into a node.js application which allowed users to scroll through content on a television with physical swipes."
 	},
 	"np-complete": {
 	  "title": "np_complete1",
