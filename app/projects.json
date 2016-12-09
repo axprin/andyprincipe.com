@@ -73,9 +73,15 @@
 	"thermin": {
 	  "title": "thermin",
 	  "intro_text": "Originally started as a way play with the Web Audio API, I got the idea to abstract it into a jQuery plugin first, then ultimately a vanilla JavaScript library for easy implementation anywhere. Allows for basic customization (oscillator wave type, frequency minimum and frequency maximum) and comes out of the box ready to easily implement and play with.",
-	"link_address": "https://cdn.rawgit.com/axprin/thermin.js/master/index.html",
-	"link_text": "Demo",
-	"link_address_2": "https://github.com/axprin/thermin.js",
-	"link_text_2": "Source Code"
+		"link_address": "https://cdn.rawgit.com/axprin/thermin.js/master/index.html",
+		"link_text": "Demo",
+		"link_address_2": "https://github.com/axprin/thermin.js",
+		"link_text_2": "Source Code"
+	},
+	"react-weather": {
+		"title": "React Weather App",
+	  "intro_text": "Simple app that allows users to get weather conditions of a zip code built entirely with React. For the back-end, I use a React Fetch component that hits the open weather map api.",
+		"link_address": "https://github.com/axprin/react-weather",
+		"link_text": "Source Code"
 	}
 }
