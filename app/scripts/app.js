@@ -78,6 +78,13 @@
       Polymer.dom(e).node.activeElement.parentElement.submit();
       document.getElementById('form-success-message').style.display = 'inline-block';
     }
-  }
+  };
 
+  // app.slider = function(e) {
+  //   console.log('sliderrrr', e);
+  // };
+
+  // app.setPos = function(e) {
+  //   console.log('setPos');
+  // };
 })(document);
