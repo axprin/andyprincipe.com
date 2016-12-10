@@ -12,7 +12,7 @@
       }
     </style>
     <div id="slider-track" class='home-pic-background'>
-      <img id='picture-slider' src="../images/axprin.png" alt="andy!" on-mousedown="mousedown" on-mouseup="mouseup">
+      <img id='picture-slider' src="../images/axprin.png" alt="andy!" on-down="mousedown">
     </div>
   </template>
   <script>
@@ -20,25 +20,30 @@
       is: 'slider-bar',
       mousedown: function(e) {
         e.preventDefault();
+
         this.picture = document.getElementById('picture-slider');
         this.track = document.getElementById('slider-track');
-        // this.offset = e.clientX - this.track.getBoundingClientRect().left;
-        // console.log("this.offset: ", this.offset);
+        this.width = this.track.getBoundingClientRect().width;
 
-        this.listen(this.track, 'mousemove', 'duringMouseDown');
-        // console.log("picture: ", picture);
-        // console.log("track: ", track.getBoundingClientRect().left);
-        // console.log('mousedown event working', e.clientX - this.offsetLeft);
-        // picture.setAttribute("style", "margin-left:" + offset + "px"); 
+        this.listen(document, 'touchmove', 'duringMouseDown');
+        this.listen(document, 'mousemove', 'duringMouseDown');
+        this.listen(document, 'up', 'mouseup');
       },
       mouseup: function(e) {
         e.preventDefault;
-        this.unlisten(this.track, 'mousemove', 'duringMouseDown');
-        console.log('mouseup event working', e.clientX, this.offset);
+
+        this.unlisten(document, 'touchmove', 'duringMouseDown');
+        this.unlisten(document, 'mousemove', 'duringMouseDown');
+        this.unlisten(document, 'up', 'mouseup');
       },
       duringMouseDown: function(e) {
-        // console.log("this");
-        this.picture.setAttribute("style", "margin-left:" + (e.clientX - this.track.getBoundingClientRect().left) + "px"); 
+        var xPos = e.clientX || e.touches[0].clientX;
+        var marginLeft = xPos - this.track.getBoundingClientRect().left - 60;
+
+        if (marginLeft <= 0) marginLeft = 0;
+        if (marginLeft > this.width - 135) marginLeft = this.width - 135;
+
+        this.picture.setAttribute("style", "margin-left:" + marginLeft + "px"); 
       }
     });
   </script>
